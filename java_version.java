@@ -26,6 +26,11 @@ class Pair<T,K> {
     public String toString() {
         return "(" + first + ", " + second + ")";
     }
+   
+    @Override
+    public int hashCode() { 
+        return this.toString().hashCode(); 
+    }
     
     
     @Override
